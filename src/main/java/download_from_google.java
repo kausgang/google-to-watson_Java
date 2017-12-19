@@ -1,25 +1,27 @@
-
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
-
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
-
 import java.io.*;
-
 import java.util.ArrayList;
+
 
 public class download_from_google {
 
+    private String SEARCH_ENGINE_ID , API_KEY;
+
+
+    public download_from_google(String SEARCH_ENGINE_ID, String API_KEY) {
+
+        this.API_KEY = API_KEY;
+        this.SEARCH_ENGINE_ID = SEARCH_ENGINE_ID;
+    }
+
     public void search_and_download(String SEARCH_STRING, String DOWNLOAD_LOCATION){
 
-        String SEARCH_ENGINE_ID="010470030133584414703:xtjxxxaw8sy";
-        String API_KEY= "AIzaSyCYHzQn3eMkmm0UkktGFnGTf7JbUgF_Hw4";
 
-        //ENTER SEARCH STRING IN NATURAL LANGUAGE
-//        String SEARCH_STRING="sample pdf";
 
         //REMOVE SPACES FROM SEARCH STRING, REPLACE WITH + .. SO AS TO ALLOW GOOGLE TO SEARCH
         SEARCH_STRING=SEARCH_STRING.replace(' ','+');

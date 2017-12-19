@@ -1,8 +1,5 @@
-
-
 import com.ibm.watson.developer_cloud.discovery.v1.model.AddDocumentOptions;
 import com.ibm.watson.developer_cloud.http.HttpMediaType;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -11,16 +8,23 @@ import com.ibm.watson.developer_cloud.discovery.v1.model.DocumentAccepted;
 
 public class upload {
 
-    String environmentId = "34dcbea4-1dcd-49a7-ab06-4a111ec73a00";
-    String collectionId = "cdd05d11-5615-4eeb-a9df-32a99d5be525";
-
-    Discovery discovery = new Discovery("2017-11-07");
-    String username="32751f3f-7ec1-4bc1-a16c-ca18a2782d4f";
-    String password="1tY17DiZp8W3";
+    private String environmentId , collectionId , username , password;
+    private Discovery discovery;
+    private AddDocumentOptions.Builder builder;
 
 
 
-    AddDocumentOptions.Builder builder = new AddDocumentOptions.Builder(environmentId,collectionId);
+    public upload(String environmentId, String collectionId, String username, String password) {
+        this.environmentId = environmentId;
+        this.collectionId = collectionId;
+        this.username = username;
+        this.password = password;
+
+        discovery = new Discovery("2017-11-07");
+        builder = new AddDocumentOptions.Builder(environmentId,collectionId);
+    }
+
+
 
 
     ////RECEIVE FILENAME FROM CALLING FUNCTION
