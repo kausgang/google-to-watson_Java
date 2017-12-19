@@ -11,12 +11,12 @@ import com.ibm.watson.developer_cloud.discovery.v1.model.DocumentAccepted;
 
 public class upload {
 
-    String environmentId = "34dcbea4-1dcd-49a7-ab06-4a111ec73a00";
-    String collectionId = "cdd05d11-5615-4eeb-a9df-32a99d5be525";
+    String environmentId = "ENVIRONMENT_ID";
+    String collectionId = "COLLECTION_ID";
 
     Discovery discovery = new Discovery("2017-11-07");
-    String username="32751f3f-7ec1-4bc1-a16c-ca18a2782d4f";
-    String password="1tY17DiZp8W3";
+    String username="USERNAME";
+    String password="PASSWORD";
 
 
 
