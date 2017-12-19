@@ -1,5 +1,3 @@
-import com.ibm.watson.developer_cloud.discovery.v1.Discovery;
-
 import java.io.File;
 
 public class main {
