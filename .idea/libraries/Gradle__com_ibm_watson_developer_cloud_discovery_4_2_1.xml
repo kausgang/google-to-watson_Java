@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ibm.watson.developer_cloud:discovery:4.2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.watson.developer_cloud/discovery/4.2.1/2e92de36f5a8697df3019e72a102be9bd7141dbc/discovery-4.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.watson.developer_cloud/discovery/4.2.1/82f23643df45425b24f8f9424c413516d16c614b/discovery-4.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
